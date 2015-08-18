@@ -1,4 +1,4 @@
-/* global acf */
+/* global acf, ACFaddRelL10n */
 
 jQuery(document).ready(function($) {
 	
@@ -10,7 +10,7 @@ jQuery(document).ready(function($) {
 			val        = $('<div />').html($input.val()).text(),
 			post_types = $field.data('post_type').split(',');
 
-		if ( val && window.confirm( 'Do you want to create a new object called "' + val + '"?' ) ) {
+		if ( val && window.confirm( ACFaddRelL10n.confirmTitle.replace( '{title}', val ) ) ) {
 			$.ajax({
 				url: acf.o.ajaxurl,
 				type: 'post',

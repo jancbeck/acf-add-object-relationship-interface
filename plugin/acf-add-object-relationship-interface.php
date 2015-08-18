@@ -5,7 +5,7 @@ Description: Create posts from the relationship interface of the advanced custom
 Plugin URI: https://github.com/jancbeck/acf-add-object-relationship-interface
 Author: Jan Beck
 Author URI: http://jancbeck.com
-Version: 1.0
+Version: 1.0.0
 License: GPL2
 Text Domain: acf-add-rel
 */
@@ -37,10 +37,9 @@ define( 'ACF_ADD_REL_URL', plugin_dir_url( __FILE__ ) );
  *  @return  void
  */
 function admin_enqueue_scripts_acf_rel() {
-
-	wp_enqueue_script( 'acf-add-rel', ACF_ADD_REL_URL . 'js/acf-add-rel.js', array( 'acf-input' ), '1.0.0', true );
 	wp_enqueue_style( 'acf-add-rel', ACF_ADD_REL_URL . 'css/acf-add-rel.css', array( 'acf-input' ), '1.0.0' );
-
+	wp_enqueue_script( 'acf-add-rel', ACF_ADD_REL_URL . 'js/acf-add-rel.js', array( 'acf-input' ), '1.0.0', true );
+	wp_localize_script( 'acf-add-rel', 'ACFaddRelL10n', array( 'confirmTitle' => __( 'Do you want to create a new object called "{title}"?', 'acf-add-rel' ) ) );
 }
 add_action('admin_enqueue_scripts', 'admin_enqueue_scripts_acf_rel');
 

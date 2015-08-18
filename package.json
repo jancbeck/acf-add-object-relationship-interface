@@ -1,0 +1,33 @@
+{
+  "name": "acf-add-object-relationship-interface",
+  "version": "1.0.0",
+  "description": "Create posts from the relationship interface of the advanced custom fields plugin if they do not exist yet.",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-wp-deploy": "^1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jancbeck/acf-add-object-relationship-interface.git"
+  },
+  "keywords": [
+    "acf",
+    "advanced",
+    "custom",
+    "fields",
+    "relationship",
+    "ajax",
+    "wordpress"
+  ],
+  "author": "Jan Beck",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/jancbeck/acf-add-object-relationship-interface/issues"
+  },
+  "homepage": "https://github.com/jancbeck/acf-add-object-relationship-interface#readme"
+}
