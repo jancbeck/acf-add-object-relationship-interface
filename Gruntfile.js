@@ -6,7 +6,7 @@ module.exports = function(grunt) {
 	    wp_deploy: {
 	        deploy: { 
 	            options: {
-	                plugin_slug: 'acf-add-object-relationship-interface',
+	                plugin_slug: 'acf-add-posts-via-relationship-interface',
 	                svn_user: 'jancbeck',  
 	                build_dir: 'plugin' //relative path to plugin directory
 	            },

@@ -2,7 +2,7 @@
 /*
 Plugin Name: ACF - Add posts via relationship interface
 Description: Create posts from the relationship interface of the advanced custom fields plugin if they do not exist yet.
-Plugin URI: https://github.com/jancbeck/acf-add-object-relationship-interface
+Plugin URI: https://github.com/jancbeck/acf-add-posts-via-relationship-interface
 Author: Jan Beck
 Author URI: http://jancbeck.com
 Version: 1.0.0
