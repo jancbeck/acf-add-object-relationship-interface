@@ -41,7 +41,7 @@ function admin_enqueue_scripts_acf_rel() {
 	wp_enqueue_script( 'acf-add-rel', ACF_ADD_REL_URL . 'js/acf-add-rel.js', array( 'acf-input' ), '1.0.0', true );
 	wp_localize_script( 'acf-add-rel', 'ACFaddRelL10n', array( 'confirmTitle' => __( 'Do you want to create a new object called "{title}"?', 'acf-add-rel' ) ) );
 }
-add_action('admin_enqueue_scripts', 'admin_enqueue_scripts_acf_rel');
+add_action('acf/input/admin_enqueue_scripts', 'admin_enqueue_scripts_acf_rel');
 
 /**
  *  Create new posts via ajax.
