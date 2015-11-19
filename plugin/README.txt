@@ -2,8 +2,8 @@
 Contributors: jancbeck
 Tags: acf, advanced custom fields, relationship, ajax
 Requires at least: 4.0
-Tested up to: 4.3
-Stable tag: 1.0.1
+Tested up to: 4.4
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,6 +16,9 @@ Install like any other plugin.
 Notice that the plugin only supports relationship fields with a single post type.
 
 == Changelog ==
+
+= 1.0.2 =
+* Added WP 4.4 compatibility
 
 = 1.0.1 =
 * Enqueue scripts via acf hook to prevent admin js errors
