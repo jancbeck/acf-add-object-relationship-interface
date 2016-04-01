@@ -1,5 +1,9 @@
 .acf-button-add-object {
 	position: absolute;
-	top: 12px;
-	right: 14px;
+    top: 13px;
+    right: 15px;
+	z-index: 1;
+}
+.acf_relationship.has-search.has-post_type .relationship_left {
+	position: relative;
 }

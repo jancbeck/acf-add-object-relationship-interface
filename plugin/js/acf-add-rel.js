@@ -21,8 +21,8 @@ jQuery(document).ready(function($) {
 					post_type: post_types,
 					nonce: acf.o.nonce
 				}, acf.o ),
-				success: function( json ){
-					if ( json.data.post_id ) {
+				success: function( request ){
+					if ( request.data ) {
 						acf.fields.relationship.set({ $field : $field }).fetch();
 					}
 				}
@@ -30,8 +30,8 @@ jQuery(document).ready(function($) {
 		}
 	}
 
-	function searchInputHandler() {
-		var button = $(this).siblings('.acf-button-add-object');
+	function searchInputHandler(event) {
+		var button = $( event.data[0] );
 		if ( this.value ) {
 			button.show();
 		} else {
@@ -50,8 +50,8 @@ jQuery(document).ready(function($) {
 
 			// attach add button only if there is just one post type
 			// TODO: allow multiple post types
-			if ( post_types.length === 1 ) {
-				$(this).find('.relationship_search').on('keyup', searchInputHandler).after(add_button);
+			if ( post_types.length === 1 ) { 
+				$(this).find('.relationship_search').on('keyup', add_button, searchInputHandler).after(add_button);
 			}
 
 		});

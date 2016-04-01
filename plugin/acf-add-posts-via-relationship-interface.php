@@ -60,17 +60,15 @@ function acf_create_rel_post() {
 	}
 
 	// collect and santize data before insertion
-	$data      = array( );
 	$title     = sanitize_post_field( 'post_title', $_POST['title'], null, 'db' );
 	$post_type = sanitize_post_field( 'post_type', $_POST['post_type'][0], null, 'db' );
 
 	if ( ! empty( $title ) && ! empty( $post_type ) ) {
 		// allow other developers to filter arguments
-		$data['post_id'] = wp_insert_post( apply_filters( 'acf_add_rel_post_args', array( 'post_type' => $post_type, 'post_title' => $title ) ) );
-		do_action( 'acf_add_rel_post_created', $data['post_id'] );
+		$post_id = wp_insert_post( apply_filters( 'acf_add_rel_post_args', array( 'post_type' => $post_type, 'post_title' => $title ) ) );
 	}
 
-	wp_send_json_success( $data );
+	wp_send_json_success( apply_filters( 'acf_add_rel_post_created', $post_id ));
 
 }
 add_action( 'wp_ajax_acf/fields/relationship/create_post', 'acf_create_rel_post' );
