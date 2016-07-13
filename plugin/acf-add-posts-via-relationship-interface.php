@@ -5,7 +5,7 @@ Description: Create posts from the relationship interface of the advanced custom
 Plugin URI: https://github.com/jancbeck/acf-add-posts-via-relationship-interface
 Author: Jan Beck
 Author URI: http://jancbeck.com
-Version: 1.0.4
+Version: 1.0.5
 License: GPL2
 Text Domain: acf-add-rel
 */
@@ -72,3 +72,8 @@ function acf_create_rel_post() {
 
 }
 add_action( 'wp_ajax_acf/fields/relationship/create_post', 'acf_create_rel_post' );
+
+function acf_load_plugin_textdomain() {
+    load_plugin_textdomain( 'acf-add-rel', FALSE, basename( dirname( __FILE__ ) ) );
+}
+add_action( 'plugins_loaded', 'acf_load_plugin_textdomain' );
