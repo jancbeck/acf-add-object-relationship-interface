@@ -1,0 +1,40 @@
+# Copyright (C) 2016 ACF - Add posts via relationship interface
+# This file is distributed under the same license as the ACF - Add posts via relationship interface package.
+msgid ""
+msgstr ""
+"Project-Id-Version: ACF - Add posts via relationship interface 1.0.4\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/acf-add-posts-via-"
+"relationship-interface\n"
+"POT-Creation-Date: 2016-07-13 13:14:36+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: acf-add-posts-via-relationship-interface.php:42
+msgid "Do you want to create a new object called \"{title}\"?"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "ACF - Add posts via relationship interface"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/jancbeck/acf-add-posts-via-relationship-interface"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Create posts from the relationship interface of the advanced custom fields "
+"plugin if they do not exist yet."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Jan Beck"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://jancbeck.com"
+msgstr ""
