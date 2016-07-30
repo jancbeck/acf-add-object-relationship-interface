@@ -2,8 +2,8 @@
 Contributors: jancbeck
 Tags: acf, advanced custom fields, relationship, ajax
 Requires at least: 4.0
-Tested up to: 4.5
-Stable tag: 1.0.6
+Tested up to: 4.6
+Stable tag: 1.0.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,6 +16,9 @@ Install like any other plugin.
 Notice that the plugin only supports relationship fields with a single post type.
 
 == Changelog ==
+
+= 1.0.7 =
+* Fixes a bug where the add-button would not align correctly when the field had no post-type filter
 
 = 1.0.6 =
 * Set correct text domain to enable translations
