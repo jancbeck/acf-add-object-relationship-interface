@@ -4,6 +4,6 @@
     right: 15px;
 	z-index: 1;
 }
-.acf_relationship.has-search.has-post_type .relationship_left {
+.acf_relationship.has-search .relationship_left {
 	position: relative;
 }
