@@ -1,5 +1,7 @@
 # ACF - Add posts via relationship interface
 
+**Note of deprecation:** This plugin will no longer receive updates in the future. I recommend using [other plugins available](https://wordpress.org/plugins/quick-and-easy-post-creation-for-acf-relationship-fields/).
+
 Create posts from the relationship interface of the advanced custom fields plugin if they do not exist yet.
 
 ## Installation
